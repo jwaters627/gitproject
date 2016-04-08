@@ -51,7 +51,7 @@ header.change #normal {
 
 header.change #hov {
     display: block;
-    font-size: 160px;
+    font-size: 22px;
     color: red;
 }
 
