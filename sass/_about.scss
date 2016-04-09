@@ -1,0 +1,42 @@
+// ABOUT PAGE STYLES
+body {
+	background-color: $aboutbground;
+	font-family: $mainfont;
+
+	header {
+		background-color: $headerbground;
+		font-family: $fancyfont;
+	}
+
+	#project-info {
+		padding-left: 5%;
+		padding-right: 5%;
+
+		p {
+			padding-right: 20%;
+			color: $aboutmaincolor;
+		}
+	}
+
+	#bouncing-box {
+		padding-left: 5%;
+		padding-right: 5%;
+
+		#scene {
+		  background-color: lightsalmon;
+		  width: 50%;
+		  height: 200px;
+		  position: absolute;
+		}
+
+		#box {
+		  width: 100px;
+		  height: 100px;
+		  background-color: cornflowerblue;
+		  position: absolute;
+		}
+	}
+}
+
+
+

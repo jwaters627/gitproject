@@ -1,0 +1,25 @@
+/*HERO SECTION STYLES*/
+#hero {
+    font-family: $mainfont;
+    background-image: url("http://www.seerinteractive.com/wp-content/uploads/2014/12/Seer-Blog-event-tracking-explained-1440x700.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 60%;
+    color: $herocolor;
+    text-align: center;
+
+    h1 {
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-top: 10%;
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.5em;
+        margin-top: 10%;
+    }
+}
+
+
+
