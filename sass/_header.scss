@@ -1,0 +1,54 @@
+/*HEADER*/
+
+header {
+    height: 60px;
+    margin-bottom: 0;
+}
+
+header h4 {
+    color: #3e3e3e;
+    font-family: blow_brush, helvetica;
+    font-size: 22px;
+    font-weight: bold;
+    width: 30%;
+    float: left;
+    margin: 23px 0 0 45px;
+}
+
+
+nav {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+nav ul {
+    display: inline-block;
+    float: right;
+    list-style-type: none;
+    width: 40%;
+    margin-right: 8%;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 8 15;
+    float: right;
+    font-family: blow_brush;
+}
+
+a{
+    text-decoration: none;
+    color: #3e3e3e;
+}
+
+a:hover{
+    color: yellow;
+
+}
+
+
+
+
+
