@@ -13,8 +13,10 @@
 // FLOATING DIV ON ABOUT PAGE
 var state = {
   boxTop: 0,
+  boxLeft: 0,
   moving: true,
   verticalDirection: 1,
+  horizontalDirection: 1,
   rotate: 0,
 };
 
@@ -35,8 +37,9 @@ sceneElement.onclick = handleClick;
 function draw () {
   //do some animation here...
   boxElement.style.top = state.boxTop + 'px';
+  boxElement.style.left = state.boxLeft + 'px';
   boxElement.style.transform = 'rotateX(85deg)';
-  boxElement.style.transform = 'rotateY(85deg)';
+  boxElement.style.transform = 'rotateY(' + state.rotate + 'deg)';
   if (state.boxTop === 100) {
     state.verticalDirection = -1;
   } else {
@@ -46,9 +49,18 @@ function draw () {
   if (state.boxTop === 0) {
     state.verticalDirection = 1;
   }
+
+  if (state.boxLeft === ((window.innerWidth * .5) - 100)){
+    state.horizontalDirection = -2;
+
+  }
+  else if (state.boxLeft === 0) {
+    state.horizontalDirection = 2;
+  };
   
   if (state.moving) {
     state.boxTop = state.boxTop + state.verticalDirection;
+    state.boxLeft = state.boxLeft + state.horizontalDirection;
     state.rotate = state.rotate + 1;
   } else  {
     //don't change anything
